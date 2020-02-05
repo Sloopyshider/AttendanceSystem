@@ -1,33 +1,36 @@
 @extends('layouts/header')
 
 @section('content')
-<form action="{{ url('/login') }}" method="POST">
+    <link rel="stylesheet" href="{{ asset('/bootstrap/login_design.css') }}">
+    <form action="{{ url('/login') }}" method="POST">
 
     {{ csrf_field() }}
-    <input type="submit" value="LOGIN">
 
-    <div class="card">
-        <div class="card-body">
-            <div class="form-row">
-                <div class="col-sm-4">Username:</div>
-                <div class="col-sm-4">
-                    <input type="text" name="username" id="username" class="form-control">
+        <div class="login-form">
+            <div class="form-header">
+                <div class="user-logo">
+                    <img src="https://www.pngrepo.com/download/213506/boss-man.png" alt="User"/>
                 </div>
+                <div class="title">Login</div>
             </div>
-            <div class="form-row">
-                <div class="col-sm-4">Password:</div>
-                <div class="col-sm-4">
-                    <input type="text" name="password" id="password" class="form-control">
+                <div class="form-container">
+                    <div class="form-element">
+                        <label class="fa fa-user" for="login-username"></label>
+                        <input  id="name" placeholder="Username" type="text" name="username" required minlength="3" maxlength="15" size="10">
+                    </div>
+                    <div class="form-element">
+                        <label class="fa fa-key" for="login-password"></label>
+                        <input  id="password" placeholder="Password" type="password" name="password" required>
+                    </div>
+                    <div class="form-element">
+                        <input type="submit" value="LOGIN" class="login">
+                    </div>
                 </div>
-            </div>
-        </div>
+               </div>
 
-        <div class="card-footer">
-            <input type="submit" value="LOGIN" class="btn btn-block btn-outline-primary">
-        </div>
-
-    </div>
 
 </form>
+
+
 
 @endsection

@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-
-
+    return view('welcome');
 });
 
 Route::get('/test', 'UserController@index');
 
 Route::get('login', 'Controller@login');
 Route::post('login', 'Controller@authenticate');
+

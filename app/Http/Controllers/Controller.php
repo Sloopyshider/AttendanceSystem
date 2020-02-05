@@ -23,15 +23,17 @@ class Controller extends BaseController
 
         $username = $request->username;
         $password= $request->password;
+
+
         $loginCredentials = [
             'username' => $username,
             'password' => $password,
         ];
 
         if(Auth::attempt($loginCredentials)) {
-            dd('pasok');
+            return view('welcome');
         } else {
-            dd('hindi');
+            return view('login');
         }
 
     }
