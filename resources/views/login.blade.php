@@ -2,6 +2,27 @@
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('/bootstrap/login_design.css') }}">
+
+{{--    @if($errors->any())--}}
+
+{{--        @foreach($errors->all() as $error)--}}
+{{--            <div class="row mt-2">--}}
+{{--                <div class="col-sm-6 offset-3">--}}
+{{--                    <div class="alert alert-danger alert-dismissible fade show" role="alert">--}}
+{{--                        {{ $error }}--}}
+{{--                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">--}}
+{{--                            <span aria-hidden="true">&times;</span>--}}
+{{--                        </button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+{{--        @endforeach--}}
+
+
+{{--    @endif--}}
+
+
     <form action="{{ url('/login') }}" method="POST">
 
     {{ csrf_field() }}

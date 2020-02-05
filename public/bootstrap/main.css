@@ -1,0 +1,343 @@
+body{
+    background: linear-gradient(to top, #7be495 30%, #185a9d 100%);
+    background-size: cover;
+    min-height:100vh;
+    overflow: hidden;
+}
+.head1
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 2px;
+}
+
+
+.img1
+{
+    padding-top: 20px;
+    padding-left: 130px;
+    height: 80px;
+    width: 360px;
+}
+
+.btn {
+    position: absolute;
+    left: auto;
+    resize: vertical;
+}
+
+
+.employeename{
+    position: absolute;
+    right: 13%;
+    height: 5px;
+    font-size: 14px;
+    font-family: Segoe UI Symbol, monospace;
+    font-weight: bold;
+    padding-top: 0;
+    color: white;
+
+}
+
+.employeeposition{
+    position: fixed;
+    right: 17%;
+    height: 20px;
+    font-size: 14px;
+    font-family: Segoe UI Symbol, monospace;
+    font-weight: bold;
+    top: 6%;
+
+}
+
+.employeeidnumber{
+    position: fixed;
+    right: 310px;
+    height: 20px;
+    font-size: 14px;
+    font-family: Segoe UI Symbol, monospace;
+    font-weight: bold;
+    top: 9%;
+
+}
+
+hr {
+    display: block;
+    margin: auto;
+    border: 4px solid #95D8EB;
+}
+
+.footer1 {
+    position: fixed;
+    bottom: 3%;
+    width: 100%;
+}
+
+.marq{
+    font-size: 22px;
+    height: 20px;
+    color: #0c0c0c;
+    resize: vertical;
+}
+
+.horizon {
+    display: block;
+    margin-bottom: 10px;
+    border: 4px solid #95D8EB;
+    width: auto;
+}
+
+.clock {
+    font-weight: bold;
+    color:  #0c0c0c;
+    font-size: 40px;
+    margin-left: 9%;
+    width: 60px;
+}
+
+.labeltimesheet{
+    position: absolute;
+    padding-top: 80px;
+    left: 525px;
+    color: #87B049;
+    font-weight: bold;
+    resize: vertical;
+}
+
+.table1 {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    left: 24%;
+    width: 65%;
+    height: 100px;
+    border-collapse: collapse;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+th, td{
+    border: 3px solid #FCC133;
+    text-align: center;
+    width: auto;
+}
+
+tr:nth-child(1) {
+    background-color: #666666;
+}
+
+.labellates{
+    position: absolute;
+    margin-left: 30%;
+    bottom: 15%;
+    font-weight: bolder;
+    color:  #0c0c0c;
+}
+
+.labelpresent{
+    position: absolute;
+    margin-left: 55%;
+    bottom: 15%;
+    font-weight: bolder;
+    color:  #0c0c0c;
+}
+
+.labelabsent{
+    position: absolute;
+    margin-left: 80%;
+    bottom: 15%;
+    font-weight: bolder;
+    color:  #0c0c0c;
+}
+
+.timein{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 50px;
+    bottom: 450px;
+    background-color: yellowgreen;
+}
+
+.timeout{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 20px;
+    bottom: 470px;
+    background-color: yellowgreen;
+}
+
+.userdetails{
+    font-size: 20px;
+    border: 2px black groove;
+    margin-left: 200px;
+
+}
+
+.personal {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 31%;
+    top:33%;
+}
+
+.account {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    top:33%;
+}
+
+.compinfo {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    bottom: 30%;
+}
+
+.edit{
+    position: absolute;
+    border: 2px black groove;
+    background-color: pink;
+    font-size: 20px;
+    left: 45%;
+    bottom: 28%;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adduser1{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #a4c573;
+    font-size: 20px;
+    left: 240px;
+    bottom: 35%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+}
+
+.cncl{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #a4c573;
+    font-size: 20px;
+    left: 45%;
+    bottom: 20%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+
+.dropbtn1 {
+    background-color: #87B049;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+    bottom: 32px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cff4d2;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.avat{
+
+    float: right;
+    padding-right: 430px;
+    top: 50px;
+}
+* {
+    box-sizing: border-box;
+}
+
+input{
+    border-radius: 5px;
+    position: center;
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid;
+    background: #f1f1f1;
+
+}
+
+label{
+    font-weight: bold;
+    color: white;
+    font-family: SansSerif;
+}
+.div1{
+    padding-top: 40px;
+    padding-left: 90px;
+}
+
+select{
+    border-radius: 5px;
+    position: center;
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid;
+    background: #f1f1f1;
+}
+
+.border {
+    position: absolute;
+    border: 5px solid #FCC133;
+    left: 330px;
+    top: 150px;
+    bottom: 150px;
+    right: 250px;
+    background-color: grey;
+    z-index: -1;
+    border-radius: 10px;
+}
