@@ -85,13 +85,23 @@ class Controller extends BaseController
     }
 
     public function profile(){
-
-
         $user = Auth::user();
-
-
-
+        if(!$user) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
         return view('pages/eprofile');
+
+    }
+
+    public function intime(){
+        $user = Auth::user();
+        if(!$user) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
+        return view('pages/intime');
+
+    }
+
+    public function record(){
+        $user = Auth::user();
+        if(!$user) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
+        return view('pages/record');
 
     }
 

@@ -40,10 +40,10 @@
             <div class="dropdown">
                 <img src="down4.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="intime.php">Attendance</a>
-                    <a href="record.php ">Record</a>
-                    <a href="eprofile.php">Employee Profile</a>
-                    <a href="sections/logout.php">Log out</a>
+                    <a href="{{url('intime')}}">Attendance</a>
+                    <a href="{{url('record')}}">Record</a>
+                    <a href="{{url('eprofile')}}">Employee Profile</a>
+                    <a href="{{url('logout')}}">Log out</a>
 
 
 
