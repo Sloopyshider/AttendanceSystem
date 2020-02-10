@@ -4,6 +4,7 @@
             <link rel="stylesheet" href="{{ asset('/bootstrap/main.css') }}">
             <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
         </head>
+
         <body>
 
 
@@ -70,4 +71,7 @@
 
 
         </div>
+         @yield('content')
+
         </body>
+

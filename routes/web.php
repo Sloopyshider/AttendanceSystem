@@ -32,5 +32,9 @@ Route::get('about', 'Controller@about');
 Route::get('navbar', 'Controller@navbar');
 Route::get('welcome', 'Controller@navbar');
 
+Route::get('eprofile', function(){
+    return view('pages.eprofile');
+});
+
 
 
