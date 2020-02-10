@@ -25,11 +25,11 @@ class Controller extends BaseController
 
 
         if($position) {
-            var_dump($position);
-            exit();
+//            var_dump($position);
+//            exit();
         } else {
-            var_dump('NO RECORD');
-            exit();
+//            var_dump('NO RECORD');
+//            exit();
         }
 
         return view('login');
@@ -75,5 +75,11 @@ class Controller extends BaseController
         return view('about')->with('title', $title)->with('titlename', $titlename);
     }
 
+
+
+    public function logout(){
+        Auth::logout();
+        return redirect('login');
+    }
 
 }
