@@ -48,7 +48,7 @@ class Controller extends BaseController
         ];
 
         if(Auth::attempt($loginCredentials)) {
-            return view('welcome');
+            return redirect('about')->with('about','Login Successfully');
         } else {
             Auth::logout();
             return view('login')->withErrors('CREDENTIALS NOT FOUND');
@@ -67,10 +67,6 @@ class Controller extends BaseController
 
 //        dd($user);
 
-
-
-
-
         $title = 'Hello';
         return view('about')->with('title', $title)->with('titlename', $titlename);
     }
@@ -81,5 +77,20 @@ class Controller extends BaseController
         Auth::logout();
         return redirect('login');
     }
+
+    public function navbar(){
+
+
+        $user = Auth::user();
+
+
+
+        $navname = $user->first_name;
+        $title = $user->last_name;
+        $posname = $user->position->name;
+
+        return view('welcome')->with('title', $title)->with('navname', $navname)->with('posname', $posname);
+    }
+
 
 }
