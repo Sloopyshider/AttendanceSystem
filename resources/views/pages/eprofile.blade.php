@@ -1,7 +1,6 @@
-@extends('layouts.navbar')
+@include('layouts.navbar')
 
 
-@section('content')
     <div class='div1'>
         <div class='Eborder'></div>
         <form class='div1'>
@@ -28,4 +27,4 @@
 
         </form>
     </div>
-@endsection
+

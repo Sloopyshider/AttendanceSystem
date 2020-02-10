@@ -19,6 +19,10 @@ Route::get('/', function () {
 //    return view('welcome');
 //});
 
+Route::get('eprofile', function(){
+    return view('pages.eprofile')->with('navbar',);
+});
+
 
 
 
@@ -29,12 +33,12 @@ Route::get('logout', 'Controller@logout');
 Route::get('login', 'Controller@login');
 Route::post('login', 'Controller@authenticate');
 Route::get('about', 'Controller@about');
-Route::get('navbar', 'Controller@navbar');
 Route::get('welcome', 'Controller@navbar');
 
-Route::get('eprofile', function(){
-    return view('pages.eprofile');
-});
+//Route::get('eprofile', 'Controller@profile');
+
+Route::get('navbar', 'Controller@navbar');
+
 
 
 

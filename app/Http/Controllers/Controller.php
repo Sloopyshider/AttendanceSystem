@@ -81,16 +81,20 @@ class Controller extends BaseController
     public function navbar(){
 
 
+        return view('welcome');
+    }
+
+    public function profile(){
+
+
         $user = Auth::user();
 
 
 
-        $navname = $user->first_name;
-        $title = $user->last_name;
-        $posname = $user->position->name;
+        return view('pages/eprofile');
 
-        return view('welcome')->with('title', $title)->with('navname', $navname)->with('posname', $posname);
     }
+
 
 
 }

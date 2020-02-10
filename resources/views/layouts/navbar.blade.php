@@ -23,13 +23,17 @@
         <br>
 
         <label style="margin-left: 20px; font-size: 17px">
-            Hello: <font style="font-family: Verdana">{{ $navname ?? '' }}</font>
+
+
+            Hello: <font style="font-family: Verdana"> {{ Auth::user()->first_name }}
+
+          </font>
             <br>
             <label style="margin-left: 20px; font-size: 17px">
-                Last Name:  <font style="font-family: Verdana">{{$title ?? ''}} </font>
+                Last Name:  <font style="font-family: Verdana"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Verdana"> {{$posname ?? ''}} </font>
+                    Position: <font style="font-family: Verdana">{{ Auth::user()->position->name }} </font>
             <br>
         </label>
 
@@ -70,8 +74,7 @@
 
 
 
-        </div>
-         @yield('content')
+            </label></label></label></div>
 
         </body>
 
