@@ -38,7 +38,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function position() {
+    public function positions() {
         return $this->belongsTo('\App\Position', 'position_id', 'id');
     }
 

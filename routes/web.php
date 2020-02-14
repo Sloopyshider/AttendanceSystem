@@ -32,14 +32,25 @@ Route::get('/test', 'UserController@index');
 Route::get('about', 'Controller@about');
 
 
-
 /*Needs*/
 Route::get('logout', 'Controller@logout');
 Route::get('login', 'Controller@login');
 Route::post('login', 'Controller@authenticate');
 Route::get('eprofile', 'Controller@profile');
-Route::get('intime', 'Controller@intime');
+
 Route::get('record', 'Controller@record');
+
+Route::resource('intime', 'TimeIn');
+
+
+Route::get('intime', 'TimeController@index');
+
+//Route::get('intime', 'TimeController@intimes');
+
+Route::post('submit', 'TimeController@timeout');
+
+
+//Route::get('/intime/{id}', 'TimeController@intimes');
 
 
 

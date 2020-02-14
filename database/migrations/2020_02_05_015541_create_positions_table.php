@@ -21,10 +21,8 @@ class CreatePositionsTable extends Migration {
 
         Schema::table('users', function (Blueprint $table) {
             $table->unsignedInteger('position_id')->nullable();
-
             $table->foreign('position_id')->references('id')->on('positions');
         });
-
     }
 
     /**
@@ -34,6 +32,6 @@ class CreatePositionsTable extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('positions');
+//        Schema::dropIfExists('positions');
     }
 }

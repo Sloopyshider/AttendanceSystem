@@ -16,8 +16,8 @@ class CreateRecordsTable extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->increments('id');
             $table->date('Date');
-            $table->dateTime('Time_In');
-            $table->dateTime('Time_Out');
+            $table->time('Time_In');
+            $table->time('Time_Out')->nullable();
             $table->timestamps();
         });
 
