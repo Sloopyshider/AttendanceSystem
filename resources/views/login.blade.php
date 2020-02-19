@@ -1,6 +1,5 @@
 @extends('layouts/header')
 
-@section('content')
     <link rel="stylesheet" href="{{ asset('/bootstrap/login_design.css') }}">
 
 {{--    @if($errors->any())--}}
@@ -53,5 +52,3 @@
 </form>
 
 
-
-{{--@endsection--}}

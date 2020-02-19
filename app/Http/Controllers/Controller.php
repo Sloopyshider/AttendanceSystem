@@ -105,6 +105,11 @@ class Controller extends BaseController
 
     }
 
+    public function eprofile(){
+        $user = Auth::user();
+        User::find($user);
+        return view('pages.eprofile');
+    }
 
 
 }

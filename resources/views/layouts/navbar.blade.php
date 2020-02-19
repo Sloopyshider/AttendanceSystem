@@ -46,7 +46,6 @@
                     <a href="{{url('logout')}}">Log out</a>
 
 
-
                 </div>
             </div>
 
@@ -74,7 +73,8 @@
 
 
 
-            </label></label></label></div>
+            </label></label>
+        </label></div>
 
         </body>
 
