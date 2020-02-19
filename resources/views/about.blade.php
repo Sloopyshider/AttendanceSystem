@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <h1>{{ $titlename }}</h1>
+        <h1>{{ $title }}</h1>
 
     <!-- Styles -->
         <style>

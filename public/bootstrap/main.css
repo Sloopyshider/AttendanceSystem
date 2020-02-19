@@ -341,3 +341,13 @@ select{
     z-index: -1;
     border-radius: 10px;
 }
+
+.table-full-width {
+    width: 100% !important;
+}
+
+.wide-cell {
+    width: 250px !important;
+    height: 100px;
+    vertical-align: middle !important;
+}

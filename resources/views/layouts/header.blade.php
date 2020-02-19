@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="{{ asset('/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/bootstrap/main.css') }}">
     <script src="{{ asset('/bootstrap/jquery/jquery-3.4.1.slim.min.js') }}"></script>
     <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
 
@@ -42,6 +43,7 @@
 
 @endif
 
+@yield('content')
 
 
 </body>

@@ -2,6 +2,7 @@
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <link rel="stylesheet" href="{{ asset('/bootstrap/main.css') }}">
+
             <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
         </head>
 
@@ -33,7 +34,7 @@
                 Last Name:  <font style="font-family: Verdana"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Verdana">{{ Auth::user()->position->name }} </font>
+                    Position: <font style="font-family: Verdana">{{ Auth::user()->positions->name }} </font>
             <br>
         </label>
 

@@ -48,7 +48,7 @@ class Controller extends BaseController
         ];
 
         if(Auth::attempt($loginCredentials)) {
-            return redirect('about')->with('about','Login Successfully');
+            return redirect('intime')->with('about','Login Successfully');
         } else {
             Auth::logout();
             return view('login')->withErrors('CREDENTIALS NOT FOUND');
