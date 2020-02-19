@@ -12,13 +12,18 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $primaryKey = 'id';
+
+    protected $table = 'users';
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'email',
+        'password',
+        'first_name',
+        'last_name',
+        'middle_name',
+        'birth_date',
+        'username'
     ];
 
     /**
@@ -42,8 +47,13 @@ class User extends Authenticatable
     public function position() {
         return $this->belongsTo('\App\Position', 'position_id', 'id');
     }
+//    public static function updateData($id, $userData){
+//        DB::table('users')
+//            ->where('id', $userData)
+//            ->update($userData);
+//    }
 
-    /*public $primaryKey = 'user';
-    public $timestamps = true;*/
+
+
 
 }

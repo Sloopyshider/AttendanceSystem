@@ -15,15 +15,14 @@ Route::get('/', function () {
     return view('login');
 });
 
-//Route::get('/admin/', function () {
+//Route::get('/admin/'function () {
 //    return view('welcome');
 //});
 
 
 
 
-Route::get('/test', 'UserController@index');
-
+//Route::get('/test', 'UsersController@index');
 
 Route::get('logout', 'Controller@logout');
 Route::get('login', 'Controller@login');
@@ -31,13 +30,23 @@ Route::post('login', 'Controller@authenticate');
 Route::get('about', 'Controller@about');
 Route::get('navbar', 'Controller@navbar');
 Route::get('welcome', 'Controller@navbar');
-Route::get('eprofile', 'Controller@eprofile');
-
-/*Route::get('eprofile', function(){
-    return view('pages.eprofile');
-});*/
 
 
-/*Route::resource('user', 'UserController');*/
+Route::resource('eprofile', 'UsersController');
+Route::post('eprofile/{id}', 'UsersController@update');
+
+
+
+
+
+
+
+/*Route::get('eprofile', 'UsersController');
+Route::post('eprofile', 'UsersController@update');*/
+
+
+
+
+
 
 
