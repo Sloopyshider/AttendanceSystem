@@ -34,7 +34,7 @@
                 Last Name:  <font style="font-family: Verdana"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Verdana">{{ Auth::user()->positions->name }} </font>
+                    Position: <font style="font-family: Verdana">{{ Auth::user()->position->name }} </font>
             <br>
         </label>
 

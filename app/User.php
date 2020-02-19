@@ -47,6 +47,12 @@ class User extends Authenticatable
     public function position() {
         return $this->belongsTo('\App\Position', 'position_id', 'id');
     }
+
+    public function records()
+    {
+        return $this->hasMany("\App\Records", "user_id", "id");
+    }
+
 //    public static function updateData($id, $userData){
 //        DB::table('users')
 //            ->where('id', $userData)

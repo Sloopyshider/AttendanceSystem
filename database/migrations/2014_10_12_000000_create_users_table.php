@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->string('email')->nullable()->unique();
             $table->string('username');
             $table->string('password');
-            $table->bigInteger('con_numb');
             $table->timestamps();
         });
 
