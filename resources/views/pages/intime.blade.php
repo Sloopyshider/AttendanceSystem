@@ -71,13 +71,13 @@
 
     </tr>
 
-        @foreach($Display as $errors)
+        @foreach($Display as $row)
         <tr>
-        <th width="50px">{{ $errors['Date1']}}</th>
-        <th width="50px">{{$errors['Day']}}</th>
-        <th width="50px">{{$errors['Time_In']}}</th>
-        <th width="50px">{{$errors['Time_Out']}}</th>
-        <th width="50px">{{$errors['Status']}}</th>
+        <th width="50px">{{ $row['Date1']}}</th>
+        <th width="50px">{{$row['Day']}}</th>
+        <th width="50px">{{$row['Time_In']}}</th>
+        <th width="50px">{{$row['Time_Out']}}</th>
+        <th width="50px">{{$row['Status']}}</th>
         </tr>
     @endforeach
 
@@ -98,34 +98,45 @@
 
 
 <BR>
-@php $datetoday1 = date("Y-m-d"); @endphp
+@php $datetoday1 = date("M. d, Y"); @endphp
+@php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";  @endphp
+@php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";  @endphp
+@php $date = $row['Date1'] @endphp
 
 
+<form action="{{action('TimeIn@store' )}}" method="POST">
+    @csrf
+@if ($date == $datetoday1 )
+        <p> You have TIME IN today</p>
 
-
-@if ($errors['Time_Out'] != null )
-    <form action="{{action('TimeIn@store' )}}" method="POST">
-        @csrf
-
+    @elseif($date != null)
         <div style="font-size:1.5em">
-             <button href="" class="timein" name="timein" style="margin-left: 73px" type="submit" onclick="return inbtn()">TIME IN</button>
-
+           @php echo $tib @endphp
         </div>
         <br>
-
 @else ()
+        <p> You have TIME IN today</p>
+    @endif
+
+</form>
+
+
+<form action="submit" method="POST">
+    @csrf
+
+@if ($row['Date1'] != $datetoday1)
 
 
 
-            <form action="submit" method="POST">
+    @elseif( $row['Time_Out'] != null)
+        <p> You have TIME OUT today</p>
 
-                @csrf
 
-                <button href="" class="timeout" style="margin-left: 75px" onclick="return outbtn()">TIME OUT</button>
-            </form>
+    @elseif ($row['Time_In'] > null)
+        @php echo $tob @endphp
+
+
             @endif
-
-
 </form>
 
 

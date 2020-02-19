@@ -38,7 +38,7 @@ Route::get('login', 'Controller@login');
 Route::post('login', 'Controller@authenticate');
 Route::get('eprofile', 'Controller@profile');
 
-Route::get('record', 'Controller@record');
+Route::get('record', 'TimeController@display');
 
 Route::resource('intime', 'TimeIn');
 
@@ -48,6 +48,8 @@ Route::get('intime', 'TimeController@index');
 //Route::get('intime', 'TimeController@intimes');
 
 Route::post('submit', 'TimeController@timeout');
+
+Route::resource('records', 'RecordController');
 
 
 //Route::get('/intime/{id}', 'TimeController@intimes');

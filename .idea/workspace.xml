@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0db9ff-48c1-4153-8354-a881925f61c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TimeIn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AttendanceSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AttendanceSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/records/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Records.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Records.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Records.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_05_015541_create_positions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_05_015541_create_positions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_11_013503_create_records_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_11_013503_create_records_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/record.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/record.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,16 +35,6 @@
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>login</find>
-      <find>edmin</find>
-      <find>direct</find>
-      <find>redirect</find>
-      <find>index</find>
-      <find>role</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,7 +136,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XmEvTKB4VU5U7Yqq5hMu8ISUUC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -172,6 +162,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap\js" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public\assets" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\resources\views\layouts" />
     </key>
@@ -200,7 +192,9 @@
       <workItem from="1581470594560" duration="12108000" />
       <workItem from="1581491170472" duration="12305000" />
       <workItem from="1581642291479" duration="2000" />
-      <workItem from="1581643104552" duration="15164000" />
+      <workItem from="1581643104552" duration="24294000" />
+      <workItem from="1581743561713" duration="86000" />
+      <workItem from="1581904430596" duration="34552000" />
     </task>
     <servers />
   </component>
@@ -244,14 +238,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="754" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581946162461">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="754" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.947@0.0.1739.947" timestamp="1581946162461" />
+    <state x="650" y="230" key="FileChooserDialogImpl" timestamp="1581906334276">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1581906334276" />
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1581643104802">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog/0.0.1739.947@0.0.1739.947" timestamp="1581643104802" />
+    <state x="679" y="0" width="862" height="932" key="dock-window-1" timestamp="1581930474477">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="679" y="0" width="862" height="932" key="dock-window-1/0.0.1739.947@0.0.1739.947" timestamp="1581930474477" />
     <state x="527" y="218" key="run.anything.popup" timestamp="1581651393304">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="527" y="218" key="run.anything.popup/0.0.1739.947@0.0.1739.947" timestamp="1581651393304" />
+    <state x="532" y="202" width="672" height="678" key="search.everywhere.popup" timestamp="1581949782690">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="532" y="202" width="672" height="678" key="search.everywhere.popup/0.0.1739.947@0.0.1739.947" timestamp="1581949782690" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

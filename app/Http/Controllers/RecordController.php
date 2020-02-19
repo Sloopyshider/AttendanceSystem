@@ -3,18 +3,48 @@
 namespace App\Http\Controllers;
 
 use App\Records;
+use Carbon\Carbon;
+use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
 
-class RecordsController extends Controller
+class RecordController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index() {
+        $data = [];
+
+        $data = [];
+
+        $period = CarbonPeriod::create(Carbon::now()->firstOfMonth(), Carbon::now()->lastOfMonth());
+
+        $days = [];
+
+        foreach ($period->toArray() as $day) {
+            if(!$day->isWeekend()) $days[] = $day;
+        }
+
+//        $data['days'] = $days;
+
+//        $dayOfWeeks =
+
+        $weeks = [];
+            $weekDays = [];
+            foreach ($days as $day) {
+                $weekDays[$day->dayOfWeek] = $day;
+                if($day->dayOfWeek == 5) {
+                    $weeks[] = $weekDays;
+                    $weekDays = [];
+                }
+            }
+        $data['weeks'] = $weeks;
+
+
+
+        return view('pages/records/index')->with($data);
     }
 
     /**

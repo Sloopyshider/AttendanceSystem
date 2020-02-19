@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Position;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,15 +16,19 @@ class TimeController extends Controller
 {
     public function index()
     {
+        $users123 = Auth::user();
         /*Make a non value var*/
         $display = [];
         $colin = "";
         $colout = "";
         $status = "";
+        $dates = "";
 
 //        $sta = Records::all();
+        if(!$users123) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
 
         $users = Auth::user()->id;
+
         $user1 = Records::all()->where('user_id',$users);
 
 
@@ -44,16 +50,7 @@ class TimeController extends Controller
 //        $start  = new Carbon($colin);
 //        $end    = new Carbon($colout);
 //        $total = $start->diff($end)->format('%H hrs');
-            /*Null Total if no Time Out have no Value*/
-            //        if($colout == null)
-            //        {
-            //            $total= null;
-            //        }
-            //        else{
-            //            $total = $total;
-            //        } **//
 
-            /*Status*/
             $pres = "Present";
             $late1 = "Late";
 
@@ -108,5 +105,67 @@ class TimeController extends Controller
 //        $user1 = DB::select('Select * from records where user_id ='.$users);
 
         return redirect('intime');
+    }
+
+    public function display(Request $request){
+        date_default_timezone_set('Asia/Manila');
+        $time1 = Carbon::today();
+
+        $users = Auth::user()->id;
+        $user1 = Records::all()->where('user_id',$users);
+
+//        $user = Auth::user();
+//
+//        $records = $user->;
+
+        $user = User::where('id', Auth::user()->id)
+            ->with('records')
+            ->first();
+//
+//        dd($user, $user->records);
+
+
+
+        $dataRecords = [];
+
+        foreach ($user1 as $dataRecord)
+        {
+            $rowdates = $dataRecord->Date;
+            $rowin = $dataRecord->Time_In;
+            $rowout = $dataRecord->Time_Out;
+
+            $date = date('M. d, Y', strtotime($rowdates));
+            $dates = \Carbon\Carbon::parse($rowdates)->format('M. d, Y');
+            $dayOfTheWeek = date('l', strtotime($date));
+
+            $start  = new Carbon($rowin);
+            $end    = new Carbon($rowout);
+        $total = $start->diff($end)->format('%H');
+
+            $pres = "Present";
+            $late1 = "Late";
+
+            $late = strtotime('9:15:01 am');
+            $sta = strtotime($rowin);
+
+            if ($late <= $sta) {
+                $status = $late1;
+            } else {
+                $status = $pres;
+            }
+
+
+            $dataRecords[] = [
+                'Date1' => $dates,
+                'Day' => $dayOfTheWeek,
+                'Time_In' => $rowin,
+                'Time_Out' => $rowout,
+                'Total' => $total,
+                'Status' => $status
+            ];
+        }
+
+
+        return view('pages\record',["Records"=>$dataRecords]);
     }
 }
