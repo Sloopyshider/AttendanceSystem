@@ -6,14 +6,17 @@
             <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
         </head>
 
+<hr>
         <body>
 
 
-
         <div class="head1">
-            <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
-            <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt="">
-            <img src="avatar1.jpg" width="60px" height="60px" style="margin-left: 44%">
+
+                <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
+            <a href= {{url('intime')}}>
+            <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt=""> </a>
+            <a href= {{url('eprofile')}}>
+            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 51%; cursor: pointer"> </a>
 
 
 
@@ -21,21 +24,19 @@
  <label class="employeename">
 
 
-        <br>
-
         <label style="margin-left: 20px; font-size: 17px">
 
 
-            Hello: <font style="font-family: Verdana"> {{ Auth::user()->first_name }}
+            Hello: <font style="font-family: Open Sans, Raleway, sans-serif"> {{ Auth::user()->first_name }}
 
           </font>
             <br>
             <label style="margin-left: 20px; font-size: 17px">
-                Last Name:  <font style="font-family: Verdana"> {{ Auth::user()->last_name }}</font>
+                Last Name:  <font style="font-family: Open Sans, Raleway, sans-serif"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Verdana">{{ Auth::user()->position->name }} </font>
-            <br>
+                    Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name}} </font>
+
         </label>
 
             <div class="dropdown">
@@ -74,8 +75,9 @@
 
 
 
-            </label></label>
-        </label></div>
-
+            </label>
+        </label>
+        </label>
+        </div>
         </body>
 

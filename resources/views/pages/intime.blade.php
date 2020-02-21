@@ -8,29 +8,23 @@
     <style>
         .timein {
             background-color:#34ce57;
-            border-radius:28px;
+            border-radius:3px;
             border:1px solid #003300;
-            display:inline-block;
             cursor:pointer;
-            color:black;
-            font-family:SansSerif;
-            font-size:25px;
-            padding:16px 31px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #2f6627;
+            font-size: 16px;
+            width: 10%;
+            margin-left: 46%;
+
         }
         .timeout {
-            background-color:#ff0000;
-            border-radius:28px;
-            border:1px solid #000000;
-            display:inline-block;
+            background-color:#34ce57;
+            border-radius:3px;
+            border:1px solid #003300;
             cursor:pointer;
-            color:#ffffff;
-            font-family:SansSerif;
-            font-size:23px;
-            padding:16px 31px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #2f6627;
+            font-size: 16px;
+            width: 10%;
+            margin-left: 46%;
+
         }
     </style>
     <script>
@@ -58,12 +52,14 @@
 
 <body>
 <hr>
+<br>
 
-<h1> </h1>
-
+<div class="indiBorder">
+    <br>
 <table class="table1">
-    <tr>
-        <th>Date</th>
+    <label class="divtitle"> Weekly Time Sheet </label>
+    <tr style="font-weight: bolder; color: white" >
+        <th >Date</th>
         <th width="50px">Day of the Week</th>
         <th width="50px">Time in</th>
         <th width="50px">Time out</th>
@@ -82,11 +78,21 @@
     @endforeach
 
 
-
-
 </table>
+</div>
+<div class="indiright">
+    <br>
+    <label class="divtitle" style="top: 40%"> Summary Report Weekly </label>
+    <br>
+    <label class="labellates"> NUMBER OF LATES: </label>
+    <br>
+    <label class="labelpresent"> NUMBER OF PRESENTS: </label>
+    <br>
+    <label class="labelabsent"> NUMBER OF ABSENTS: </label>
 
-<div style="margin-top: 200px;margin-left: -80px">
+
+</div>
+
 <label class="clock">
     <span id="hr">00</span>
     <span> : </span>
@@ -94,20 +100,19 @@
     <span> : </span>
     <span id="sec">00</span>
 </label>
-</div>
 
 
-<BR>
+
 @php $datetoday1 = date("M. d, Y"); @endphp
 @php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";  @endphp
 @php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";  @endphp
 @php $date = $row['Date1'] @endphp
 
 
-<form action="{{action('TimeIn@store' )}}" method="POST">
+<form action="{{action('TimeIn@store')}}" method="POST">
     @csrf
 @if ($date == $datetoday1 )
-        <p> You have TIME IN today</p>
+        <p style="margin-left: 46%;"> You have TIME IN today</p>
 
     @elseif($date != null)
         <div style="font-size:1.5em">
@@ -115,7 +120,7 @@
         </div>
         <br>
 @else ()
-        <p> You have TIME IN today</p>
+        <p style="margin-left: 46%;> You have TIME IN today</p>
     @endif
 
 </form>
@@ -129,7 +134,7 @@
 
 
     @elseif( $row['Time_Out'] != null)
-        <p> You have TIME OUT today</p>
+        <p style="margin-left: 45.5%;"> You have TIME OUT today</p>
 
 
     @elseif ($row['Time_In'] > null)
@@ -137,6 +142,7 @@
 
 
             @endif
+
 </form>
 
 

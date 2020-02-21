@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Position;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 /*use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,8 @@ class UsersController extends Controller
 //        $userData = User::all(); //collection  aarray
 //        $userData = User::find(2); //aarray
 //        return response()->json($userData,200);
-        $user = User::where('id', 2)
+        $userId = Auth::user()->id;
+        $user = User::where('id', $userId)
             ->with('position')->first();
         $positions = Position::all();
         $data['userData'] = $user;
@@ -40,7 +42,7 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required',
+            'email_add' => 'required',
             'password' => 'required',
             'first_name' => 'required',
             'last_name' => 'required',
@@ -51,7 +53,7 @@ class UsersController extends Controller
 
         $userData = new User();  //new instance of User
         $userData->email = $request->email;
-        $userData->password = $request->password;
+        $userData->password = Hash::make($request->password);
         $userData->first_name = $request->first_name;
         $userData->last_name = $request->last_name;
         $userData->middle_name = $request->middle_name;
@@ -59,7 +61,7 @@ class UsersController extends Controller
         $userData->username = $request->username;
         $userData->save();
 
-        return view('pages.eprofile')->with('userData',$userData);
+        return view('pages.eprofile')->with('userData', $userData);
 
 
 //        $userData->name = $request->name; //fetch the data from URL / POST / GET
@@ -97,11 +99,11 @@ class UsersController extends Controller
             'last_name' => '',
             'birth_date' => '',
             'username' => 'required',
-            'position' => 'required|integer'
+            'position' => 'integer'
         ];
-        $requestFields['password'] = $request->password ? 'required' : '';
+        $requestFields['password'] = Hash::make($request->password) ? 'required' : '';
         $requestFields['middle_name'] = $request->middle_name ? 'required' : '';
-        $validatedData  = $this->validate( $request, $requestFields);
+        $validatedData  = $this->validate($request, $requestFields);
         $userData = User::find($id);
         $userData->fill($validatedData);
 

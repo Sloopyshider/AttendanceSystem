@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4a0db9ff-48c1-4153-8354-a881925f61c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PositionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PositionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TimeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/record.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/record.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/public/bootstrap/main.css" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,27 +143,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap\js" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\assets" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
     </key>
   </component>
   <component name="RunManager">
@@ -184,17 +200,11 @@
       <workItem from="1581643104552" duration="24294000" />
       <workItem from="1581743561713" duration="86000" />
       <workItem from="1581904430596" duration="34552000" />
+      <workItem from="1582161014349" duration="28100000" />
+      <workItem from="1582194188882" duration="5000" />
+      <workItem from="1582247754101" duration="1051000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -235,10 +245,11 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1581906334276" />
-    <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1581643104802">
-      <screen x="0" y="0" width="1739" height="947" />
+    <state x="630" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1582247825019">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog/0.0.1739.947@0.0.1739.947" timestamp="1581643104802" />
+    <state x="630" y="328" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582247825019" />
     <state x="679" y="0" width="862" height="932" key="dock-window-1" timestamp="1581930474477">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -247,10 +258,11 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="527" y="218" key="run.anything.popup/0.0.1739.947@0.0.1739.947" timestamp="1581651393304" />
-    <state x="532" y="202" width="672" height="678" key="search.everywhere.popup" timestamp="1581949782690">
-      <screen x="0" y="0" width="1739" height="947" />
+    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup" timestamp="1582186073870">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="202" width="672" height="678" key="search.everywhere.popup/0.0.1739.947@0.0.1739.947" timestamp="1581949782690" />
+    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582186073870" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -259,6 +271,11 @@
           <url>file://$PROJECT_DIR$/app/Http/Controllers/PositionController.php</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/intime.blade.php</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -24,6 +24,13 @@
 {{--    @endif--}}
 
 
+    <style>
+        .loginBody{
+            background: linear-gradient(to top, #7be495 30%, #185a9d 100%);
+        }
+    </style>
+    <body class="loginBody">
+
     <form action="{{ url('/login') }}" method="POST">
 
     {{ csrf_field() }}
@@ -52,5 +59,5 @@
 
 
 </form>
-
+</body>
 

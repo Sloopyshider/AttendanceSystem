@@ -10,7 +10,7 @@ class PositionController extends Controller
 
     public function index()
     {
-        return response()->json('Welcome to my weird word',200);
+//        return response()->json('Welcome to my weird word',200);
     }
 
     /**
