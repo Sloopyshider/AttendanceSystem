@@ -16,7 +16,7 @@
             <a href= {{url('intime')}}>
             <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt=""> </a>
             <a href= {{url('eprofile')}}>
-            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 51%; cursor: pointer"> </a>
+            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 40%; cursor: pointer"> </a>
 
 
 

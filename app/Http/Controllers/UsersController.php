@@ -43,23 +43,32 @@ class UsersController extends Controller
     {
         $this->validate($request, [
             'email_add' => 'required',
-            'password' => 'required',
+            'password' => 'required | confirmed',
             'first_name' => 'required',
             'last_name' => 'required',
             'middle_name' => 'required',
             'birth_date' => 'required',
-            'username' => 'required'
+            'username' => 'required',
+            'address' => 'required',
+            'mobile' => 'required',
+            'tel' => 'required',
+            'password_confirmation' => 'required'
         ]);
 
         $userData = new User();  //new instance of User
         $userData->email = $request->email;
-        $userData->password = Hash::make($request->password);
+        $userData->password = $request->password;
         $userData->first_name = $request->first_name;
         $userData->last_name = $request->last_name;
         $userData->middle_name = $request->middle_name;
         $userData->birth_date = $request->birth_date;
         $userData->username = $request->username;
+        $userData->address = $request->address;
+        $userData->mobile = $request->mobile;
+        $userData->tel = $request->tel;
         $userData->save();
+
+
 
         return view('pages.eprofile')->with('userData', $userData);
 
@@ -79,7 +88,7 @@ class UsersController extends Controller
     public function show()
     {
         return view('pages.eprofile');
-        //view walang function return view  : view profile     $userData = User::find(1); //aarray
+        //view walang function return view  : view profile    $userData = User::find(1); //aarray
     }
 
 
@@ -99,9 +108,13 @@ class UsersController extends Controller
             'last_name' => '',
             'birth_date' => '',
             'username' => 'required',
-            'position' => 'integer'
+            'position' => 'integer',
+            'address' => '',
+            'mobile' => '',
+            'tel' => '',
+
         ];
-        $requestFields['password'] = Hash::make($request->password) ? 'required' : '';
+        $requestFields['password'] = $request->password ? 'required | confirmed' : '';
         $requestFields['middle_name'] = $request->middle_name ? 'required' : '';
         $validatedData  = $this->validate($request, $requestFields);
         $userData = User::find($id);
