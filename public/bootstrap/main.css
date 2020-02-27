@@ -333,15 +333,16 @@ tr:nth-child(1) {
 }
 
 input{
-    border-radius: 5px;
-    position: center;
+
+    position: relative;
     width: 20%;
     padding: 10px;
     display: inline-block;
     border: 2px solid;
     background: #f1f1f1;
-
 }
+
+
 
 label{
     font-weight: bold;
@@ -364,7 +365,7 @@ select{
 }
 
 .border {
-    position: absolute;
+    position: fixed;
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow:  35px 35px 21px #666666,
     -35px -35px 21px #ffffff;
@@ -386,4 +387,3 @@ select{
     height: 100px;
     vertical-align: middle !important;
 }
-

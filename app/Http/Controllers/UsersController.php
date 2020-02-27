@@ -42,17 +42,17 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'email_add' => 'required',
-            'password' => 'required | confirmed',
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'middle_name' => 'required',
-            'birth_date' => 'required',
-            'username' => 'required',
-            'address' => 'required',
-            'mobile' => 'required',
-            'tel' => 'required',
-            'password_confirmation' => 'required'
+            'email_add' => 'required | email',
+            'password' => 'required | confirmed | max: 10 | string',
+            'first_name' => 'required | string | max: 10',
+            'last_name' => 'required | string | max: 10',
+            'middle_name' => 'required | string | max: 10',
+            'birth_date' => 'required | date',
+            'username' => 'required | string | max: 10',
+            'address' => 'required | string',
+            'mobile' => 'required | integer',
+            'tel' => 'required | string',
+            'password_confirmation' => 'required | confirmed | max: 10 | string'
         ]);
 
         $userData = new User();  //new instance of User
@@ -103,19 +103,18 @@ class UsersController extends Controller
     public function update(Request $request, $id)
     {
         $requestFields = [
-            'email' => '',
-            'first_name' => 'required',
-            'last_name' => '',
-            'birth_date' => '',
-            'username' => 'required',
+            'email' => 'required | email',
+            'first_name' => 'required | string | max: 20 ',
+            'last_name' => 'required | string | max: 20',
+            'birth_date' => 'required | date',
+            'username' => 'required | string | max: 20',
             'position' => 'integer',
-            'address' => '',
-            'mobile' => '',
-            'tel' => '',
-
+            'address' => 'required | string',
+            'mobile' => ' required | numeric | min: 11',
+            'tel' => 'required | string  | min: 11',
         ];
-        $requestFields['password'] = $request->password ? 'required | confirmed' : '';
-        $requestFields['middle_name'] = $request->middle_name ? 'required' : '';
+        $requestFields['password'] = $request->password ? 'required | confirmed | max: 10 | string' : '';
+        $requestFields['middle_name'] = $request->middle_name ? 'required | string | max: 10 | regex:/^[a-zA-Z]+$/u' : '';
         $validatedData  = $this->validate($request, $requestFields);
         $userData = User::find($id);
         $userData->fill($validatedData);
@@ -126,22 +125,6 @@ class UsersController extends Controller
         $userData->save();
 
         return redirect('eprofile')->with('success' , 'good');
-
-
-//        $userData->email = $request->input('email');
-//        $userData->password = $request->input('password');
-//        $userData->first_name = $request->input('first_name');
-//        $userData->last_name = $request->input('last_name');
-//        $userData->middle_name = $request->input('middle_name');
-//        $userData->birth_date = $request->input('birth_date');
-//        $userData->username = $request->input('username');
-//        $userData->save();
-
-//        $data = User::find(2);
-//        $data->username = $request->get('username');
-//        $data->first_name = $request->get('first_name');
-//        $data->email = $request->get('email');
-//        $data->save();
     }
 
 

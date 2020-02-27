@@ -49,7 +49,7 @@ class Controller extends BaseController
         ];
 
         if (Auth::attempt($loginCredentials)) {
-            return redirect('about')->with('about', 'Login Successfully');
+            return redirect('intime')->with('about', 'Login Successfully');
         } else {
             Auth::logout();
             return view('login')->withErrors('CREDENTIALS NOT FOUND');
@@ -57,21 +57,21 @@ class Controller extends BaseController
 
     }
 
-    public function about()
-    {
-
-
-        $user = Auth::user();
-
-        if (!$user) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
-
-        $titlename = $user->email;
-
-//        dd($user);
-
-        $title = 'Hello';
-        return view('about')->with('title', $title)->with('titlename', $titlename);
-    }
+//    public function about()
+//    {
+//
+//
+//        $user = Auth::user();
+//
+//        if (!$user) return redirect('/login')->withErrors('YOU MUST LOGIN FIRST');
+//
+//        $titlename = $user->email;
+//
+////        dd($user);
+//
+//        $title = 'Hello';
+//        return view('pages.intime')->with('title', $title)->with('titlename', $titlename);
+//    }
 
 
     public function logout()

@@ -16,7 +16,7 @@
             <a href= {{url('intime')}}>
             <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt=""> </a>
             <a href= {{url('eprofile')}}>
-            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 40%; cursor: pointer"> </a>
+            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 40%; cursor: pointer; display: inline-grid"> </a>
 
 
 
@@ -35,7 +35,7 @@
                 Last Name:  <font style="font-family: Open Sans, Raleway, sans-serif"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name}} </font>
+                    Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name }} </font>
 
         </label>
 
@@ -80,4 +80,4 @@
         </label>
         </div>
         </body>
-
+<hr>

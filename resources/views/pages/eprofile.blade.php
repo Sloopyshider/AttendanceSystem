@@ -2,49 +2,51 @@
 
 @if ($errors->any())
     <div class="alert alert-danger">
-        <ul>
             @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
+                <script>alert("{{ $error }}")</script>
             @endforeach
-        </ul>
     </div>
 @endif
 
+    @if(session('success'))
+        <div>
+            <script>alert("Your Data is Updated")</script>
+        </div>
+    @endif
 
-<hr>
 <div class='div1'>
 
 <div class='border'> </div>
-<form action="{{action('UsersController@update', $userData->id)}}" method="post" class='div1'
+<form action="{{action('UsersController@update', $userData->id)}}" method="post" class='div1'>
     @method('POST')
 
     {{ csrf_field() }}
 
             <input type='hidden' placeholder='id' name='userId' id='id' value=''>
             <label style='padding-left: 247px' for="username">Username:</label>
-            <input type='text' placeholder='Edit your Username' id='username'  name='username' pattern='[a-z]{2,}'  style='width: 20%' value='{{$userData->username}}' disabled/>
+            <input type='text' placeholder='Edit your Username' id='username'  name='username' pattern='[a-zA-Z][a-zA-Z0-9-_.]{1,20}'  style='width: 20%' value='{{$userData->username}}' disabled/>
             <label style='margin-left: 177px' for="email">E-mail:</label>
             <input type='email' placeholder='Put your Email'   name='email' id='email' style='width: 20%' value='{{ $userData->email}}' disabled/>
             <br><br>
             <label style='padding-left: 243px' for="first_name">First Name:</label>
-            <input type='text' placeholder='Put your First Name' id='first_name'   name='first_name' style='width: 20%' value='{{$userData->first_name}}' disabled/>
+            <input type='text' placeholder='Put your First Name' id='first_name'   name='first_name' style='width: 20%'  value='{{$userData->first_name}}' disabled/>
             <label style='margin-left: 152px' for="password">Password:</label>
-            <input type='password' placeholder='Update your Password'  name='password' id='password' style='width: 20%'  hidden='{{$userData->password}}' disabled />
+            <input type='password' placeholder='Update your Password'  name='password' id='password' style='width: 20%' pattern='[a-zA-Z][a-zA-Z0-9-_.]{1,20}'  hidden='{{$userData->password}}' disabled />
             <br><br>
             <label style='margin-left: 230px' for="middle_name">Middle Name:</label>
-            <input type='text' placeholder='Put your Middle Name' id='middle_name'  name='middle_name'   style='width: 20%' value='{{$userData->middle_name}}' disabled/>
+            <input type='text' placeholder='Put your Middle Name' id='middle_name'  name='middle_name'   style='width: 20%' pattern='[a-zA-Z][a-zA-Z0-9-_.]{1,20}' value='{{$userData->middle_name}}' disabled/>
             <label style='margin-left: 87px' for="password_confirmation">Confirm Password:</label>
-            <input type='password' placeholder='Re-type your New Password'  name='password_confirmation' id='password_confirmation' style='width: 20%' value='{{$userData->password_confirmation}}' disabled/>
+            <input type='password' placeholder='Re-type your New Password'  name='password_confirmation' id='password_confirmation' pattern='[a-zA-Z][a-zA-Z0-9-_.]{1,20}' style='width: 20%' value='{{$userData->password_confirmation}}' disabled/>
             <br><br>
             <label style='padding-left: 248px' for="last_name">Last Name:</label>
-            <input type='text' placeholder='Edit your Last name' id='last_name'  name='last_name'  style='width: 20%' value='{{$userData->last_name}}' disabled/>
+            <input type='text' placeholder='Edit your Last name' id='last_name'  name='last_name'  style='width: 20%' pattern='[a-zA-Z][a-zA-Z0-9-_.]{1,20}' value='{{$userData->last_name}}' disabled/>
             <label style='margin-left: 115px' for="mobile">Mobile Number:</label>
-            <input type='tel' placeholder='Please put your number'  name='mobile' id='mobile' style='width: 20%' value='{{$userData->mobile}}' maxlength='11' disabled/>
+            <input type='tel' placeholder='Please put your number'  name='mobile' id='mobile' style='width: 20%' value='{{$userData->mobile}}' disabled/>
             <br><br>
             <label style='padding-left: 262px' for="birth_date">Birthday:</label>
             <input type='date' placeholder='Select Birthdate' id='birth_date'  name='birth_date' style='width:20%' value='{{$userData->birth_date}}' disabled/>
             <label style='margin-left: 155px' for="tel">Telephone:</label>
-            <input type='tel' placeholder='Please put a Emergency Number'  name='tel' id='tel' style='width: 20%;' value='{{$userData->tel}}' maxlength='11' disabled/>
+            <input type='tel' placeholder='Please put a Emergency Number'  name='tel' id='tel' style='width: 20%;' value='{{$userData->tel}}' disabled/>
             <br><br>
             <label style='padding-left: 263px' for="address">Address:</label>
             <input type='text' placeholder='Street/Block/Subdv No.' id='address'  name='address'   style='width: 20%' value='{{$userData->address}}' disabled/>
@@ -57,7 +59,12 @@
         @endforeach
 
     </select>
+
                 <button class='edit' type="submit" onclick='return activateFields()' id='editButton' value='2'> EDIT </button>
+
+                <button class='cncl' type='reset' value='CANCEL' id='cancel' onclick="window.location.reload()" hidden> Cancel </button>
+
+
 
                 <script type='text/javascript'>
                     let editable = false;
@@ -109,16 +116,14 @@
                                 textFields.forEach(textField => {
                                     document.getElementById(textField).disabled= false;
                                 });
+                            document.getElementById('cancel').hidden = false;
                             document.getElementById('position').disabled = false;
-                            document.getElementById('editButton').innerHTML = 'Update';
+                            document.getElementById('editButton').innerHTML = 'Save Update';
                             editable = true;
                             return false;
                         }
                     }
              </script>
-
-            <button class='cncl' type='reset' value='CANCEL' id='cancel' onclick="window.location.reload()"> Cancel </button>
-
 
 
 </form>
