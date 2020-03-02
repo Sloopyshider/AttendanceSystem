@@ -1,0 +1,389 @@
+body{
+    background: #FFFCF1;
+    background-size: cover;
+    min-height:100vh;
+    overflow: hidden;
+}
+.head1
+{
+    top: 0;
+    width: 100%;
+    background-color: #0076BE;
+}
+
+
+.img1
+{
+    padding-top: 4px;
+    padding-left: 100px;
+    height: 70px;
+    width: 360px;
+}
+
+.btn {
+    position: absolute;
+    left: auto;
+    resize: vertical;
+}
+
+
+.employeename{
+    position: absolute;
+    right: 15%;
+    height: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-family: "Open Sans", "Raleway", sans-serif;
+}
+
+.employeeposition{
+    position: fixed;
+    right: 17%;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 6%;
+    font-family: "Open Sans", "Raleway", sans-serif;
+
+}
+
+.employeeidnumber{
+    position: fixed;
+    right: 310px;
+    height: 20px;
+    font-size: 14px;
+    font-family: "Open Sans", "Raleway", sans-serif;
+    font-weight: bold;
+    top: 9%;
+
+}
+
+hr {
+    display: block;
+    margin: auto;
+    border: 4px solid #48BF91;
+}
+
+.footer1 {
+    position: fixed;
+    bottom: 3%;
+    width: 100%;
+}
+
+.marq{
+    font-size: 22px;
+    height: 20px;
+    color: #0c0c0c;
+    resize: vertical;
+}
+
+.horizon {
+    display: block;
+    margin-bottom: 10px;
+    border: 4px solid #95D8EB;
+    width: auto;
+}
+
+.clock {
+    font-weight: bold;
+    color:  #0c0c0c;
+    font-size: 26px;
+    margin-left: 47%;
+    width: 60px;
+    padding-top: 5pxf;
+}
+
+.labeltimesheet{
+    position: absolute;
+    padding-top: 80px;
+    left: 525px;
+    color: #87B049;
+    font-weight: bold;
+    resize: vertical;
+}
+
+.table1 {
+    position: absolute;
+    font-family: "Open Sans", "Raleway", sans-serif;
+    left: 10px;
+    width: 97%;
+    height: 420px;
+    margin-top: 30px;
+    text-decoration-color: white;
+
+
+}
+
+th, td{
+    border: 2px solid #0076BE;
+    text-align: center;
+    width: auto;
+    border-radius: 3px
+}
+
+tr:nth-child(1) {
+    background-color: #0076BE;
+}
+.indiBorder{
+    position: absolute;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  35px 35px 21px #666666,
+    -35px -35px 21px #ffffff;
+    border: 5px solid #48BF91;
+    left: 5%;
+    top: 30%;
+    bottom: 5%;
+    right: 50%;
+    z-index: -1;
+    border-radius: 10px;
+}
+.indiright{
+    position: absolute;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  35px 35px 21px #666666,
+    -35px -35px 21px #ffffff;
+    border: 5px solid #48BF91;
+    left: 55%;
+    top: 30%;
+    bottom: 5%;
+    right: 5%;
+    z-index: -1;
+    border-radius: 10px;
+}
+.divtitle{
+
+    width: 18%;
+    font-size: 16px;
+    margin-left: 6%;
+    margin-top: 240px;
+
+
+}
+
+.labellates{
+    position: absolute;
+    margin-left: 11.5%;
+    top: 27%;
+    color:  #0c0c0c;
+}
+
+.labelpresent{
+    position: absolute;
+    margin-left: 6%;
+    padding-top: 30px;
+    color:  #0c0c0c;
+}
+
+.labelabsent{
+    position: absolute;
+    margin-left: 8.5%;
+    padding-top: 20%;
+    color:  #0c0c0c;
+}
+
+
+.timein{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 50px;
+    bottom: 450px;
+    background-color: yellowgreen;
+}
+
+.timeout{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 20px;
+    bottom: 470px;
+    background-color: yellowgreen;
+}
+
+.userdetails{
+    font-size: 20px;
+    border: 2px black groove;
+    margin-left: 200px;
+
+}
+
+.personal {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 31%;
+    top:33%;
+}
+
+.account {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    top:33%;
+}
+
+.compinfo {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    bottom: 30%;
+}
+
+.edit{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #a4c573;
+    font-size: 20px;
+    left: 32%;
+    bottom: 28%;
+    width: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adduser1{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #a4c573;
+    font-size: 20px;
+    left: 240px;
+    bottom: 35%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+}
+
+.cncl{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #a4c573;
+    font-size: 20px;
+    left: 64%;
+    bottom: 28%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+}
+
+.dropbtn1 {
+    background-color: #87B049;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+    bottom: 32px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cff4d2;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.avat{
+
+    float: right;
+    padding-right: 430px;
+    top: 50px;
+}
+* {
+    box-sizing: border-box;
+}
+
+input{
+
+    position: relative;
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid;
+    background: #f1f1f1;
+}
+
+
+
+label{
+    font-weight: bold;
+    color: black;
+    font-family: "Open Sans", "Raleway", sans-serif;
+}
+.div1{
+    padding-top: 40px;
+    padding-left: 90px;
+}
+
+select{
+    border-radius: 5px;
+    position: center;
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid;
+    background: #f1f1f1;
+}
+
+.border {
+    position: fixed;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  35px 35px 21px #666666,
+    -35px -35px 21px #ffffff;
+    border: 5px solid #0076BE;
+    left: 330px;
+    top: 150px;
+    bottom: 150px;
+    right: 250px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.table-full-width {
+    width: 100% !important;
+}
+
+.wide-cell {
+    width: 250px !important;
+    height: 100px;
+    vertical-align: middle !important;
+}

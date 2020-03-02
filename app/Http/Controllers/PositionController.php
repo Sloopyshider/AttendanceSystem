@@ -7,14 +7,10 @@ use Illuminate\Http\Request;
 
 class PositionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+//        return response()->json('Welcome to my weird word',200);
     }
 
     /**
@@ -55,7 +51,7 @@ class PositionController extends Controller
      * @param  \App\Position  $position
      * @return \Illuminate\Http\Response
      */
-    public function edit(Position $position)
+    public function edit(Request $request)
     {
         //
     }

@@ -27,11 +27,22 @@ class InitializeData extends Migration
         $user = new \App\User();
         $user->last_name = 'Ramirez';
         $user->first_name = 'John Jose';
-        $user->middle_name = 'Dacalio';
+        $user->middle_name = 'Dacallos';
         $user->birth_date = '1999-08-18';
         $user->email = 'ramirezjohn@gmail.com';
         $user->username = 'john';
         $user->password = \Illuminate\Support\Facades\Hash::make('john');
+        $user->position_id = $position->id;
+        $user->save();
+
+        $user = new \App\User();
+        $user->last_name = 'Ubas';
+        $user->first_name = 'Jake';
+        $user->middle_name = 'Andrei';
+        $user->birth_date = '1998-07-06';
+        $user->email = 'ubasjake@gmail.com';
+        $user->username = 'jake';
+        $user->password = \Illuminate\Support\Facades\Hash::make('jake');
         $user->position_id = $position->id;
         $user->save();
     }
