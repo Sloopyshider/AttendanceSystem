@@ -16,7 +16,7 @@
             <a href= {{url('intime')}}>
             <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt=""> </a>
             <a href= {{url('eprofile')}}>
-            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 40%; cursor: pointer; display: inline-grid"> </a>
+            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 51%; cursor: pointer"> </a>
 
 
 
@@ -35,9 +35,11 @@
                 Last Name:  <font style="font-family: Open Sans, Raleway, sans-serif"> {{ Auth::user()->last_name }}</font>
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
-                    Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name }} </font>
+                    Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name}} </font>
 
         </label>
+
+
 
             <div class="dropdown">
                 <img src="down4.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
@@ -45,6 +47,9 @@
                     <a href="{{url('intime')}}">Attendance</a>
                     <a href="{{url('record')}}">Record</a>
                     <a href="{{url('eprofile')}}">Employee Profile</a>
+                    @if(Auth::user()->position->id == 1)
+                        <a href="{{url('displayuser')}}">Add Employee</a>
+                    @endif
                     <a href="{{url('logout')}}">Log out</a>
 
 
@@ -80,4 +85,4 @@
         </label>
         </div>
         </body>
-<hr>
+

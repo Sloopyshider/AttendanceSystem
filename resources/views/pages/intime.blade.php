@@ -106,7 +106,7 @@
 @php $datetoday1 = date("M. d, Y"); @endphp
 @php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";  @endphp
 @php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";  @endphp
-@php $date = $row['Date1'] @endphp
+@php $date = $row ?? ''['Date1'] @endphp
 
 
 <form action="{{action('TimeIn@store')}}" method="POST">
@@ -129,11 +129,11 @@
 <form action="submit" method="POST">
     @csrf
 
-@if ($row['Date1'] != $datetoday1)
+@if ($row ['Date1'] != $datetoday1)
 
 
 
-    @elseif( $row['Time_Out'] != null)
+    @elseif( $row ['Time_Out'] != null)
         <p style="margin-left: 45.5%;"> You have TIME OUT today</p>
 
 
