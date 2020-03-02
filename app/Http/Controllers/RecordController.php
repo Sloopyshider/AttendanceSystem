@@ -14,37 +14,37 @@ class RecordController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
-        $data = [];
-
-        $data = [];
-
-        $period = CarbonPeriod::create(Carbon::now()->firstOfMonth(), Carbon::now()->lastOfMonth());
-
-        $days = [];
-
-        foreach ($period->toArray() as $day) {
-            if(!$day->isWeekend()) $days[] = $day;
-        }
-
-//        $data['days'] = $days;
-
-//        $dayOfWeeks =
-
-        $weeks = [];
-            $weekDays = [];
-            foreach ($days as $day) {
-                $weekDays[$day->dayOfWeek] = $day;
-                if($day->dayOfWeek == 5) {
-                    $weeks[] = $weekDays;
-                    $weekDays = [];
-                }
-            }
-        $data['weeks'] = $weeks;
-
-
-
-        return view('pages/records/index')->with($data);
+    public function index()
+    {
+//        $data = [];
+//
+//        $data = [];
+//
+//        $period = CarbonPeriod::create(Carbon::now()->firstOfMonth(), Carbon::now()->lastOfMonth());
+//
+//        $days = [];
+//
+//        foreach ($period->toArray() as $day) {
+//            if (!$day->isWeekend()) $days[] = $day;
+//        }
+//
+////        $data['days'] = $days;
+//
+////        $dayOfWeeks =
+//
+//        $weeks = [];
+//        $weekDays = [];
+//        foreach ($days as $day) {
+//            $weekDays[$day->dayOfWeek] = $day;
+//            if ($day->dayOfWeek == 5) {
+//                $weeks[] = $weekDays;
+//                $weekDays = [];
+//            }
+//        }
+//        $data['weeks'] = $weeks;
+//
+//
+//        return view('pages/records/index')->with($data);
     }
 
     /**
@@ -60,7 +60,7 @@ class RecordController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -71,7 +71,7 @@ class RecordController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Records  $records
+     * @param \App\Records $records
      * @return \Illuminate\Http\Response
      */
     public function show(Records $records)
@@ -82,19 +82,19 @@ class RecordController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Records  $records
+     * @param \App\Records $records
      * @return \Illuminate\Http\Response
      */
-    public function edit(Records $records)
-    {
-        //
-    }
+//    public function edit(Records $records)
+//    {
+//        //
+//    }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Records  $records
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Records $records
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Records $records)
@@ -105,11 +105,12 @@ class RecordController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Records  $records
+     * @param \App\Records $records
      * @return \Illuminate\Http\Response
      */
     public function destroy(Records $records)
     {
         //
     }
+
 }

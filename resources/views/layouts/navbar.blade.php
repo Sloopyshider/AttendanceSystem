@@ -36,8 +36,9 @@
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
                     Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name}} </font>
-
         </label>
+
+
 
             <div class="dropdown">
                 <img src="down4.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
@@ -45,9 +46,10 @@
                     <a href="{{url('intime')}}">Attendance</a>
                     <a href="{{url('record')}}">Record</a>
                     <a href="{{url('eprofile')}}">Employee Profile</a>
+                    @if(Auth::user()->position->id == 1)
+                        <a href="{{url('displayuser')}}">Add Employee</a>
+                    @endif
                     <a href="{{url('logout')}}">Log out</a>
-
-
                 </div>
             </div>
 

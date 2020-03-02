@@ -38,6 +38,15 @@ Route::get('login', 'Controller@login');
 Route::post('login', 'Controller@authenticate');
 Route::get('eprofile', 'Controller@profile');
 
+
+/*Admin*/
+Route::resource('displayuser', 'UserAdd');
+
+/*Admin End*/
+
+
+
+
 Route::get('record', 'TimeController@display');
 
 Route::resource('intime', 'TimeIn');
