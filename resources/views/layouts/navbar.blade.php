@@ -36,6 +36,7 @@
             <br>
                 <label style="margin-left: 20px; font-size: 17px">
                     Position: <font style="font-family: Open Sans, Raleway, sans-serif">{{ Auth::user()->position->name}} </font>
+
         </label>
 
 
@@ -50,6 +51,8 @@
                         <a href="{{url('displayuser')}}">Add Employee</a>
                     @endif
                     <a href="{{url('logout')}}">Log out</a>
+
+
                 </div>
             </div>
 

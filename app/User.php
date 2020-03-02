@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 
 class User extends Authenticatable
@@ -18,13 +19,23 @@ class User extends Authenticatable
 
     protected $fillable = [
         'email',
-        'password',
         'first_name',
         'last_name',
+        'password',
         'middle_name',
         'birth_date',
-        'username'
+        'username',
+        'address',
+        'mobile',
+        'tel',
+        'con_pass'
     ];
+
+    public function setPasswordAttribute($password){
+
+        $this->attributes['password'] = Hash::make($password);
+
+    }
 
     /**
      * The attributes that should be hidden for arrays.
@@ -52,14 +63,5 @@ class User extends Authenticatable
     {
         return $this->hasMany("\App\Records", "user_id", "id");
     }
-
-//    public static function updateData($id, $userData){
-//        DB::table('users')
-//            ->where('id', $userData)
-//            ->update($userData);
-//    }
-
-
-
 
 }

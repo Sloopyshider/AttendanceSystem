@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('pages.intime');
 });
 
 //Route::get('/admin/'function () {
@@ -29,7 +29,7 @@ Route::get('/', function () {
 //Route::get('welcome', 'Controller@navbar');
 //Route::get('navbar', 'Controller@navbar');
 Route::get('/test', 'UserController@index');
-Route::get('about', 'Controller@about');
+Route::get('intime', 'Controller@intime');
 
 
 /*Needs*/
@@ -72,6 +72,9 @@ Route::resource('records', 'RecordController');
 Route::resource('eprofile', 'UsersController');
 Route::post('eprofile/{id}', 'UsersController@update');
 
+Route::get('/newuser', function (){
+    return view('admin/newuser');
+});
 
 
 

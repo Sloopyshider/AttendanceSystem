@@ -18,7 +18,6 @@
 
     </style>
 <body>
-<hr>
 <br>
 
 <table class="tbl-qa" style="font-family: Open Sans, Raleway, sans-serif;font-size: 16px;">

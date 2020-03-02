@@ -72,6 +72,7 @@ class UsersController extends Controller
 
         return view('pages.eprofile')->with('userData', $userData);
 
+
 //        $userData->name = $request->name; //fetch the data from URL / POST / GET
 //
 //        $userData->email = $request->email; //fetch the data from URL / POST / GET
