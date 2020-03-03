@@ -2,190 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23ba91a-cd98-47cd-91d0-07e1326f9603" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/background-events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/daygrid-views.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/external-dragging-2cals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/external-dragging-builtin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/full-height.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/google-calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/js/theme-chooser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/json/events.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/list-views.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/locales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/month-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/php/get-events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/php/get-time-zones.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/php/utils.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/rrule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/selectable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/theming.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/time-zones.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/timegrid-views.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/examples/week-numbers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/bootstrap/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-dz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-kw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-ly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-ma.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-sa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar-tn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/bs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/en-gb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/en-nz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/es-us.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/fr-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/fr-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/kk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/lb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/nn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sr-cyrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/locales/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/daygrid/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/google-calendar/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/interaction/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/list/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/luxon/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment-timezone/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/moment/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/rrule/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/packages/timegrid/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fullcalendar/vendor/rrule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/admin/displayuser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/admin/useradd.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserAdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bootstrap/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/displayuser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/displayuser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/useradd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/useradd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/record.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/record.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -334,20 +158,21 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap\js" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\assets" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\resources\views\layouts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
     </key>
   </component>
   <component name="RunManager">
@@ -361,7 +186,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a0db9ff-48c1-4153-8354-a881925f61c8" name="Default Changelist" comment="" />
+      <changelist id="d23ba91a-cd98-47cd-91d0-07e1326f9603" name="Default Changelist" comment="" />
       <created>1580866793096</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -381,6 +206,7 @@
       <workItem from="1582194188882" duration="5000" />
       <workItem from="1582247754101" duration="1051000" />
       <workItem from="1582766768690" duration="23198000" />
+      <workItem from="1583197895900" duration="5463000" />
     </task>
     <servers />
   </component>
@@ -419,32 +245,45 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="754" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.947@0.0.1739.947" timestamp="1581946162461" />
+    <state x="703" y="364" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583201108298">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="364" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583201108298" />
     <state x="650" y="230" key="FileChooserDialogImpl" timestamp="1581906334276">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1581906334276" />
-    <state x="630" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1582766768843">
+    <state x="461" y="161" key="SettingsEditor" timestamp="1583201058133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583201058132" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1583201084672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1583201084672" />
+    <state x="630" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1583198182866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog/0.0.1739.947@0.0.1739.947" timestamp="1581643104802" />
-    <state x="630" y="328" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582766768843" />
+    <state x="630" y="328" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583198182866" />
     <state x="679" y="0" width="862" height="932" key="dock-window-1" timestamp="1581930474477">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="679" y="0" width="862" height="932" key="dock-window-1/0.0.1739.947@0.0.1739.947" timestamp="1581930474477" />
-    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1582774862266">
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1583199117073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582774862266" />
-    <state x="527" y="218" key="run.anything.popup" timestamp="1581651393304">
-      <screen x="0" y="0" width="1739" height="947" />
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583199117073" />
+    <state x="582" y="239" key="run.anything.popup" timestamp="1583132745693">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="218" key="run.anything.popup/0.0.1739.947@0.0.1739.947" timestamp="1581651393304" />
-    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup" timestamp="1582790566327">
+    <state x="582" y="239" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583132745693" />
+    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup" timestamp="1583116353360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="202" width="672" height="678" key="search.everywhere.popup/0.0.1739.947@0.0.1739.947" timestamp="1581949782690" />
-    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582790566327" />
+    <state x="587" y="222" width="742" height="745" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583116353360" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

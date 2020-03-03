@@ -2,6 +2,7 @@
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <link rel="stylesheet" href="{{ asset('/bootstrap/main.css') }}">
+            <link rel="stylesheet" href="{{ asset('/bootstrap/admin.css') }}">
 
             <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
         </head>
@@ -12,11 +13,11 @@
 
         <div class="head1">
 
-                <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
+            <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
             <a href= {{url('intime')}}>
             <img class="img1" src='{{ asset('/companylogogreen.jpg') }}' alt=""> </a>
             <a href= {{url('eprofile')}}>
-            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 51%; cursor: pointer"> </a>
+            <img src="avatar1.jpg" width="60px"  height="60px" style="margin-left: 40%; cursor: pointer; display: inline-grid"> </a>
 
 
 
@@ -85,4 +86,4 @@
         </label>
         </div>
         </body>
-
+        <hr>

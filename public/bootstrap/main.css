@@ -8,7 +8,7 @@ body{
 {
     top: 0;
     width: 100%;
-    background-color: #0076BE;
+    background-color: #5cb85c   ;
 }
 
 
@@ -62,7 +62,7 @@ body{
 hr {
     display: block;
     margin: auto;
-    border: 4px solid #48BF91;
+    border: 4px solid #0076BE;
 }
 
 .footer1 {
@@ -89,10 +89,11 @@ hr {
     font-weight: bold;
     color:  #0c0c0c;
     font-size: 26px;
-    margin-left: 47%;
+    margin-left: 7%;
     width: 60px;
-    padding-top: 5pxf;
+    padding-top: 5px;
 }
+.
 
 .labeltimesheet{
     position: absolute;
@@ -116,21 +117,21 @@ hr {
 }
 
 th, td{
-    border: 2px solid #0076BE;
+    border: 2px solid #5cb85c;
     text-align: center;
     width: auto;
     border-radius: 3px
 }
 
 tr:nth-child(1) {
-    background-color: #0076BE;
+    background-color: #5cb85c;
 }
 .indiBorder{
     position: absolute;
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow:  35px 35px 21px #666666,
     -35px -35px 21px #ffffff;
-    border: 5px solid #48BF91;
+    border: 5px solid #0076BE;
     left: 5%;
     top: 30%;
     bottom: 5%;
@@ -143,7 +144,7 @@ tr:nth-child(1) {
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow:  35px 35px 21px #666666,
     -35px -35px 21px #ffffff;
-    border: 5px solid #48BF91;
+    border: 5px solid #0076BE;
     left: 55%;
     top: 30%;
     bottom: 5%;
@@ -190,7 +191,7 @@ tr:nth-child(1) {
     border-radius: 10px;
     margin-left: 50px;
     bottom: 450px;
-    background-color: yellowgreen;
+    background-color: #5cb85c;
 }
 
 .timeout{
@@ -200,7 +201,7 @@ tr:nth-child(1) {
     border-radius: 10px;
     margin-left: 20px;
     bottom: 470px;
-    background-color: yellowgreen;
+    background-color: #5cb85c;
 }
 
 .userdetails{
@@ -213,7 +214,7 @@ tr:nth-child(1) {
 .personal {
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #5cb85c;
     font-size: 30px;
     left: 31%;
     top:33%;
@@ -222,7 +223,7 @@ tr:nth-child(1) {
 .account {
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #5cb85c;
     font-size: 30px;
     left: 56%;
     top:33%;
@@ -231,7 +232,7 @@ tr:nth-child(1) {
 .compinfo {
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #5cb85c;
     font-size: 30px;
     left: 56%;
     bottom: 30%;
@@ -240,7 +241,7 @@ tr:nth-child(1) {
 .edit{
     position: absolute;
     border: 2px black groove;
-    background-color: #a4c573;
+    background-color: #5cb85c;
     font-size: 20px;
     left: 32%;
     bottom: 28%;
@@ -252,7 +253,7 @@ tr:nth-child(1) {
 .adduser1{
     position: absolute;
     border: 2px black groove;
-    background-color: #a4c573;
+    background-color: #5cb85c;
     font-size: 20px;
     left: 240px;
     bottom: 35%;
@@ -266,7 +267,7 @@ tr:nth-child(1) {
 .cncl{
     position: absolute;
     border: 2px black groove;
-    background-color: #a4c573;
+    background-color: #5cb85c;
     font-size: 20px;
     left: 64%;
     bottom: 28%;
@@ -278,7 +279,7 @@ tr:nth-child(1) {
 }
 
 .dropbtn1 {
-    background-color: #87B049;
+    background-color: #5cb85c;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -369,7 +370,7 @@ select{
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow:  35px 35px 21px #666666,
     -35px -35px 21px #ffffff;
-    border: 5px solid #0076BE;
+    border: 5px solid #5cb85c;
     left: 330px;
     top: 150px;
     bottom: 150px;

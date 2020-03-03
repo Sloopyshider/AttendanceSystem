@@ -13,7 +13,7 @@
             cursor:pointer;
             font-size: 16px;
             width: 10%;
-            margin-left: 46%;
+            margin-left: 6%;
 
         }
         .timeout {
@@ -23,7 +23,7 @@
             cursor:pointer;
             font-size: 16px;
             width: 10%;
-            margin-left: 46%;
+            margin-left: 6%;
 
         }
     </style>
@@ -51,11 +51,10 @@
 
 
 <body>
-
 <br>
-
 <div class="indiBorder">
     <br>
+
 <table class="table1">
     <label class="divtitle"> Weekly Time Sheet </label>
     <tr style="font-weight: bolder; color: white" >
@@ -76,6 +75,7 @@
         <th width="50px">{{$row['Status']}}</th>
         </tr>
     @endforeach
+
 
 
 </table>
@@ -101,13 +101,12 @@
     <span id="sec">00</span>
 </label>
 
-
+<label style="margin-left: 34%;"> DASHBOARD </label>
 
 @php $datetoday1 = date("M. d, Y"); @endphp
 @php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";  @endphp
 @php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";  @endphp
-@php $date = $row ?? ''['Date1'] @endphp
-
+@php $date = $row ?? '' ['Date1'] @endphp
 
 <form action="{{action('TimeIn@store')}}" method="POST">
     @csrf
@@ -120,13 +119,15 @@
         </div>
         <br>
 @else ()
-        <p style="margin-left: 46%;> You have TIME IN today</p>
+        <p style="margin-left: 46%;"> You have TIME IN today </p>
     @endif
 
 </form>
 
 
-<form action="submit" method="POST">
+
+
+<form action="submit" method="post">
     @csrf
 
 @if ($row ['Date1'] != $datetoday1)
@@ -144,6 +145,7 @@
             @endif
 
 </form>
+
 
 
 </body>

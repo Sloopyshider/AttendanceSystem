@@ -13,6 +13,9 @@
             <script>alert("Your Data is Updated")</script>
         </div>
     @endif
+<br>
+<label style="margin-left: 50%;"> Employee Profile </label>
+
 
 <div class='div1'>
 
@@ -60,7 +63,7 @@
 
     </select>
 
-                <button class='edit' type="submit" onclick='return activateFields()' id='editButton' value='2'> EDIT </button>
+                <button class='edit' type="submit" onclick='return activateFields()' id='editButton' value='2' style="position: absolute"> EDIT </button>
 
                 <button class='cncl' type='reset' value='CANCEL' id='cancel' onclick="window.location.reload()" hidden> Cancel </button>
 

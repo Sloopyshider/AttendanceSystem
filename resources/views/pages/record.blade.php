@@ -11,17 +11,23 @@
 
 
         .tbl-qa{width: 100%;background-color: #f5f5f5;}
-        .tbl-qa th.table-header {padding: 5px;text-align: left;padding:10px;}
-        .tbl-qa .table-row td {padding:5px;background-color: #48BF91;vertical-align:top;}
+        .tbl-qa th.table-header {padding: 5px;text-align: left; padding:10px;}
+        .tbl-qa .table-row td {padding:5px;background-color: #48BF91; vertical-align:top;}
 
 
 
     </style>
+
+    <br>
+
+    <label style="margin-left: 50%;"> Records Table </label>
+
 <body>
 <br>
 
-<table class="tbl-qa" style="font-family: Open Sans, Raleway, sans-serif;font-size: 16px;">
-    <tr>
+<table class="tbl-qa" style="font-family: Open Sans, Raleway, sans-serif; font-size: 16px;">
+
+    <tr style="color: white">
         <th style="width: 50px;">
             Date</th>
         <th style="width: 50px; height: 40px">Day of the Week</th>
