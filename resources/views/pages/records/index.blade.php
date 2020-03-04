@@ -7,6 +7,9 @@
 
         <table class="table table-hover table-responsive table-bordered table table-full-width">
             <thead>
+
+
+
             <tr>
                 <th class="wide-cell">Monday</th>
                 <th class="wide-cell">Tuesday</th>
@@ -23,6 +26,12 @@
                     @endforeach
                 </tr>
             @endforeach
+            <tr>
+                @foreach($rec as $days)
+                    <td class="wide-cell">{{ $days }}</td>
+
+                @endforeach
+            </tr>
             </tbody>
         </table>
     </div>

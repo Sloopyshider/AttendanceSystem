@@ -104,9 +104,9 @@
 <label style="margin-left: 34%;"> DASHBOARD </label>
 
 @php $datetoday1 = date("M. d, Y"); @endphp
-@php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";  @endphp
-@php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";  @endphp
-@php $date = $row ?? '' ['Date1'] @endphp
+@php $tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"return inbtn()\"> Time In </button>";  @endphp
+@php $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"return outbtn()\"> Time Out </button>";  @endphp
+@php $date = $row['Date1'] @endphp
 
 <form action="{{action('TimeIn@store')}}" method="POST">
     @csrf

@@ -53,7 +53,7 @@ class UserController extends Controller {
 //
 //
 //        $g = $day->dayOfWeek;
-//        $data['weeks'] = $weeks;
+        $data['weeks'] = $weeks;
 //        dd($day->format('d M Y') , $weeks  );
 
         if ($rec[2] == $day->format('l') ){
@@ -64,10 +64,12 @@ class UserController extends Controller {
         {
             echo "false";
         }
-        dd($try,$day->format('l'),$rec['2']);
+//        dd($try,$day->format('l'),$rec['2']);
 
 
 
-        return view('pages.records.index')->with($data)->with('rec',$rec)->with('h',$h);
+//        return view('pages.records.index')->with($data)->with('rec',$rec)->with('h',$h);
+          return view('pages.records.index')->with('rec',$rec)->with($data);
     }
+
 }
