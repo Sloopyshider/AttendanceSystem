@@ -17,67 +17,8 @@ class UserController extends Controller {
 
     public function index() {
 
-
-
-//        $users = Auth::user()->id;
-//        $user = User::find($users);
-//        $hello = $user->records;
-//        dd($hello);
-//        exit();
-
-//
-//        foreach ($hello1 as $hi){
-//            $rowdates = $hello1->Date;
-//        }
-
-//        $display = [];
-//        $users = Auth::user()->id;
-//
-//        $user1 = Records::all()->where('user_id',$users);
-//
-//
-//        /*Get all columns*/
-//        foreach ($user1 as $user) {
-//            $coldate = $user->Date;
-//            $colin = $user->Time_In;
-//            $colout = $user->Time_Out;
-//
-//
-//            /*Get Date*/
-//            $date = date('M. d, Y', strtotime($coldate));
-//            $dates = \Carbon\Carbon::parse($coldate)->format('Y-m-d');
-//            $dayOfTheWeek = date('l', strtotime($date));
-//
-//
-//
-//            //** /*Get Time Difference*/ /*Can be added to Record Module*/
-////        $start  = new Carbon($colin);
-////        $end    = new Carbon($colout);
-////        $total = $start->diff($end)->format('%H hrs');
-//
-//            $pres = "Present";
-//            $late1 = "Late";
-//
-//            $late = strtotime('9:15:01 am');
-//            $sta = strtotime($colin);
-//
-//            if ($late <= $sta) {
-//                $status = $late1;
-//            } else {
-//                $status = $pres;
-//            }
-//
-//
-//
-//            /*Convert it to array*/
-//            $display[] = [
-//                'Date1' => $dates,
-//                'Day' => $dayOfTheWeek,
-//                'Time_In' => $colin,
-//                'Time_Out' => $colout,
-//                'Status' => $status
-//            ];
-//        }
+        $user = Auth::user()->id;
+        $rec = Records::WEEK_DAYS;
 
         $period = CarbonPeriod::create(Carbon::now()->firstOfMonth(), Carbon::now()->lastOfMonth());
 
@@ -98,9 +39,35 @@ class UserController extends Controller {
             }
         }
 
-        $data['weeks'] = $weeks;
+        $try =  Records::all("Date");
+
+//        $h = [];
+//
+//
+//
+//
+//
+//            foreach ($try as $try1) {
+//                $h[] = $try1->Date;
+//            }
+//
+//
+//        $g = $day->dayOfWeek;
+//        $data['weeks'] = $weeks;
+//        dd($day->format('d M Y') , $weeks  );
+
+        if ($rec[2] == $day->format('l') ){
+            echo "TRUE";
+        }
+
+        else
+        {
+            echo "false";
+        }
+        dd($try,$day->format('l'),$rec['2']);
 
 
-        return view('trial')->with($data);
+
+        return view('pages.records.index')->with($data)->with('rec',$rec)->with('h',$h);
     }
 }

@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d23ba91a-cd98-47cd-91d0-07e1326f9603" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/admin.css" afterDir="false" />
+    <list default="true" id="4a0db9ff-48c1-4153-8354-a881925f61c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/trial.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/displayuser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/displayuser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/useradd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/useradd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/eprofile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/intime.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/record.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/record.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Records.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Records.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +140,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -162,17 +155,18 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap\js" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public\assets" />
       <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
-      <recent name="C:\xampp\htdocs\AttendanceSystem\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AttendanceSystem\resources\views" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\resources" />
+      <recent name="C:\xampp\htdocs\AttendanceSystem\public\bootstrap" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +180,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d23ba91a-cd98-47cd-91d0-07e1326f9603" name="Default Changelist" comment="" />
+      <changelist id="4a0db9ff-48c1-4153-8354-a881925f61c8" name="Default Changelist" comment="" />
       <created>1580866793096</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -207,6 +201,7 @@
       <workItem from="1582247754101" duration="1051000" />
       <workItem from="1582766768690" duration="23198000" />
       <workItem from="1583197895900" duration="5463000" />
+      <workItem from="1583285006333" duration="966000" />
     </task>
     <servers />
   </component>
@@ -261,10 +256,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1583201084672" />
-    <state x="630" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1583198182866">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1583285201365">
+      <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="571" y="299" key="com.intellij.ide.util.TipDialog/0.0.1739.947@0.0.1739.947" timestamp="1581643104802" />
+    <state x="571" y="299" key="com.intellij.ide.util.TipDialog/0.0.1739.947@0.0.1739.947" timestamp="1583285201365" />
     <state x="630" y="328" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583198182866" />
     <state x="679" y="0" width="862" height="932" key="dock-window-1" timestamp="1581930474477">
       <screen x="0" y="0" width="1739" height="947" />
